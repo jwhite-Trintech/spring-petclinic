@@ -5,9 +5,24 @@
 <body>
 
   <h2 th:text="#{welcome}">Welcome</h2>
-  <div class="row">
-    <div class="col-md-12">
-      <img class="img-responsive" src="../static/resources/images/pets.png" th:src="@{/resources/images/pets.png}" />
+  <div class="homepage-banner" aria-label="Scrolling message">
+    <div class="homepage-banner-track">
+      <span>Dogs Rule, Cats Drool</span>
+      <span>Dogs Rule, Cats Drool</span>
+      <span>Dogs Rule, Cats Drool</span>
+    </div>
+  </div>
+  <div class="row g-4 align-items-stretch">
+    <div class="col-lg-6">
+      <img class="img-fluid homepage-promo-image" src="../static/resources/images/pets.png"
+        th:src="@{/resources/images/pets.png}" alt="Pets in the clinic" />
+    </div>
+    <div class="col-lg-6">
+      <figure class="homepage-promo-figure">
+        <img class="img-fluid homepage-promo-image" src="../static/resources/images/02947733bd81c775e0f16f4c062635ef.jpg"
+          th:src="@{/resources/images/02947733bd81c775e0f16f4c062635ef.jpg}" alt="Large breed dog facing forward" />
+        <figcaption class="homepage-photo-caption">"Master J" is watching! Bow Wow!</figcaption>
+      </figure>
     </div>
   </div>
 

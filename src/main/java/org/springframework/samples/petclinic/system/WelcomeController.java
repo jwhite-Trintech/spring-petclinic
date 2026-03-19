@@ -27,4 +27,9 @@ class WelcomeController {
 		return "welcome";
 	}
 
+	@GetMapping("/insurance")
+	public String insurance() {
+		return "insurance";
+	}
+
 }

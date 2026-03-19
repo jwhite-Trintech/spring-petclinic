@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'insurance')}">
+
+<body>
+
+  <div class="row mb-4">
+    <div class="col-lg-8">
+      <h2>Pet Insurance</h2>
+      <p class="lead">
+        Help protect your pet from unexpected vet bills with flexible coverage built for checkups, accidents, and
+        ongoing treatment.
+      </p>
+      <p>
+        Compare plans, understand reimbursements, and choose the level of protection that fits your pet's age,
+        lifestyle, and medical needs.
+      </p>
+      <div class="mt-3">
+        <a class="btn btn-primary btn-lg" th:href="@{/owners/find}">Get a Quote</a>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card table-info">
+        <div class="card-body">
+          <h4 class="card-title">Why owners enroll</h4>
+          <p class="card-text">Average reimbursement in 48 hours after claim approval.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Up to 90% back on covered expenses</li>
+            <li class="list-group-item">Use any licensed veterinarian</li>
+            <li class="list-group-item">Optional wellness add-on available</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title">Accident Cover</h4>
+          <p class="card-text">Support for fractures, swallowed items, lacerations, and emergency treatment.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title">Illness Cover</h4>
+          <p class="card-text">Protection for infections, digestive issues, cancer care, allergies, and chronic conditions.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title">Wellness Add-On</h4>
+          <p class="card-text">Optional help with annual exams, vaccines, flea prevention, and routine screening.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-12">
+      <h3>Plan comparison</h3>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Annual Limit</th>
+            <th>Reimbursement</th>
+            <th>Best for</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Essential</td>
+            <td>$5,000</td>
+            <td>70%</td>
+            <td>Young pets needing emergency-only protection</td>
+          </tr>
+          <tr>
+            <td>Preferred</td>
+            <td>$10,000</td>
+            <td>80%</td>
+            <td>Most families balancing price and coverage</td>
+          </tr>
+          <tr>
+            <td>Premier</td>
+            <td>Unlimited</td>
+            <td>90%</td>
+            <td>Pets with ongoing care needs or high-risk breeds</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="alert alert-success">
+        Multi-pet discount available when you enroll more than one dog or cat on the same policy.
+      </div>
+    </div>
+    <div class="col-lg-4 text-lg-end">
+      <a class="btn btn-primary" th:href="@{/owners/find}">Start with Your Pet</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
